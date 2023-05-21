@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from 'react-scroll'
 //images
 import Image from "../assets/avatar2.svg";
 // Icons
-import { FaDribbble, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 //type animation
 import { TypeAnimation } from "react-type-animation";
 // Motion
@@ -68,9 +69,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex gap-x-6 max-w-max items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <button className="btn btn-lg">
+                <Link to="contact" smooth={true} spy={true}>
+                  Contact me
+                </Link>
+              </button>
+              <a href="../assets/Curriculum Mauro Moyano Full Stack.pdf" target="_blank" className="text-gradient btn-link">
+                My CV
               </a>
             </motion.div>
             <motion.div
@@ -80,14 +85,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube />
+              <a href="https://www.linkedin.com/in/mauro-moyano-dev-full-stack/" target="_blank">
+                <FaLinkedin />
               </a>
-              <a href="#">
+              <a href="https://github.com/MauroMoyano" target="_blank">
                 <FaGithub />
               </a>
-              <a href="#">
-                <FaDribbble />
+              <a href="https://www.instagram.com/mauromoyanodev/" target='_blank'>
+                <FaInstagram />
               </a>
             </motion.div>
           </div>

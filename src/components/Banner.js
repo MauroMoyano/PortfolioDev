@@ -59,8 +59,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipticipline elit. unde,
-              numaq. Harun deleniti id dapiente valiet invertore.
+              I am a person who is passionate about solving problems in an innovative and creative way. I love working in teams and achieving their integration.
+I am a Full Stack Web Developer with a lot of versatility and adaptability. In this SPA created by me, you will see skills that I have, projects and more!
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -74,7 +74,7 @@ const Banner = () => {
                   Contact me
                 </Link>
               </button>
-              <a href="../assets/Curriculum Mauro Moyano Full Stack.pdf" target="_blank" className="text-gradient btn-link">
+              <a href="portfolio-starter/public/cv.pdf" download className="text-gradient btn-link">
                 My CV
               </a>
             </motion.div>

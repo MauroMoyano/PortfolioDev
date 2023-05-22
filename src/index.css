@@ -40,6 +40,13 @@
   border-radius: 100%;
 }
 
+.bg-about  {
+  border-radius: 80%;
+}
+.bg-services {
+  border-radius: 80%;
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
